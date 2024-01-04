@@ -1,2 +1,2 @@
-# github.bitskiwi.io
+# bitskiwi.github.io
 website

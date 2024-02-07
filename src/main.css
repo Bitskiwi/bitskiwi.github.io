@@ -1,0 +1,18 @@
+:root {
+	--background: #141c29;
+	--boxes: #667791;
+	--lines: #edf4ff;
+}
+
+html {
+	background-color: var(--background);
+	color: var(--lines);
+	border-radius: 10px;
+}
+
+.box {
+	background-color: var(--boxes);
+	color: var(--lines);
+	border-radius: 10px;
+	border: 1px solid var(--lines);
+}

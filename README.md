@@ -1,4 +1,3 @@
-# ![Bit Kiwi](https://github.com/bitskiwi)
 ---
 ## Projects:
 - ![**kiwiOS**](https://github.com/bitskiwi/kiwios): an x86 operating system

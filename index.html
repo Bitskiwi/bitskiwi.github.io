@@ -3,63 +3,119 @@
 		<title>Bit Kiwi website</title>
 		<link rel="icon" type="image/x-icon" href="img/kiwikat.jpg">
 		<style>
-			html {
+			body {
 				background-image: url("img/oatmeal.jpg");
-				padding: 100px;
+				background-size: cover;
+				padding: 10px;
 				font-family: 'Courier New', monospace;
+				display: grid;
+				grid-template-columns: 30% 70%;
 				color: white;
 			}
-			div {
-				background-color: rgba(50,50,50,.5);
-				margin: 5px;
-				padding: 100px;
+			.box {
+				background-color: rgba(50,50,50,.75);
+				margin: 10px;
+				margin-bottom: 50px;
+				padding: 50px;
 				border-radius: 10px;
+				border-bottom: 2px solid white;
+				border-right: 2px solid white;
 				display: grid;
 				grid-template-columns: 20% 80%;
+			}
+			.panel {
+				background-color: rgba(50,50,50,.75);
+				margin: 10px;
+				margin-bottom: 50px;
+				padding: 50px;
+				border-radius: 10px;
+				border-bottom: 2px solid white;
+				border-right: 2px solid white;
+				height: fit-content;
 			}
 			hr {
 				color: white;
 			}
-			h3 {
+			.title {
+				text-align: center;
+			}
+			.subtitle {
 				text-align: center;
 			}
 			.profile {
-				width: 100;
-				height: 100;
-				border-radius 50%;
+				background-image: url("img/kiwikat.jpg");
+				background-size: cover;
+				width: 120px;
+				border-radius: 100%;
+				height: 120px;
 			}
 		</style>
 	</head>
 	<body>
-		<div>
-			<img src="img/kiwikat.jpg" class="profile"></img>
-			<h1>Bit Kiwi</h1>
+		<div class="panel">
+			<h3><b>Contents</b></h3>
+			<ul>
+				<li><b>Projects</b></li>
+				<li><b>Setup</b></li>
+				<li><b>Measure Expirence</b></li>
+				<li><b>Language Expirience</b></li>
+				<li><b>Webdev Expirience</b></li>
+			</ul>
 		</div>
-		<hr>
 		<div>
-			<h3>Projects</h3>
-			<ul>
-				<li><b>kiwiOS:</b> a bad x86 OS I made for fun</li>
-				<li><b>kiwifetch:</b> a system info script like neofetch</li>
-				<li><b>render.c:</b> a package for basic terminal text graphics</li>
-				<li><b>calc.c:</b> a calculator with many functions from addition to factorials</li>
-				<li><b>evo_sim:</b> a basic evolution simulation</li>
-				<li><b>re-binary:</b> a terminal game about setting up radio communications with the home world through mining and refining materials
-			</ul>
-			<h3>Setup</h3>
-			<ul>
-				<li><b>OS:</b> arch</li>
-				<li><b>DE:</b> kde</li>
-				<li><b>Shell:</b> bash</li>
-				<li><b>Editor:</b> nvim</li>
-			</ul>
-			<h3>Languages</h3>
-			<ul>
-				<li><b>C</b></li>
-				<li><b>Assembly</b></li>
-				<li><b>Shell</b></li>
-				<li><b>C++</b></li>
-			</ul>
+			<div class="box">
+				<div class="profile" src="img/kiwikat.jpg"></div>
+				<div>
+					<h1>Bit Kiwi</h1>
+					<h3>i like C</h3>
+				</div>
+			</div>
+			<div class="box">
+				<h3 class="subtitle">Projects</h3>
+				<ul>
+					<li><b>kiwiOS:</b> a bad x86 OS I made for fun</li>
+					<li><b>kiwifetch:</b> a system info script like neofetch</li>
+					<li><b>render.c:</b> a package for basic terminal text graphics</li>
+					<li><b>calc.c:</b> a calculator with many functions from addition to factorials</li>
+					<li><b>evo_sim:</b> a basic evolution simulation</li>
+					<li><b>re-binary:</b> a terminal game about setting up radio communications with the home world through mining and refining materials
+				</ul>
+			</div>
+			<div class="box">
+				<h3 class="subtitle">Setup</h3>
+				<ul>
+					<li><b>OS:</b> arch</li>
+					<li><b>DE:</b> kde</li>
+					<li><b>Shell:</b> bash</li>
+					<li><b>Editor:</b> nvim</li>
+				</ul>
+			</div>
+			<div class="box">
+				<h3 class="subtitle">How I Measure Expirience</h3>
+				<ul>
+					<li><b>Can complete easy tasks ie. (I/O, Vars, Arrays, Functions, Minimal code practices):</b> 1/3</li>
+					<li><b>Can complete medium tasks ie. (Loops, Conditionals, Data Structures, Manipulating Data, Decent code practices):</b> 2/3</li>
+					<li><b>Can complete hard tasks ie. (Esoteric Functions/Libraries, Good code practices)</b> 3/3</li>
+				</ul>
+			</div>
+			<div class="box">
+				<h3 class="subtitle">Languages Expirience</h3>
+				<ul>
+					<li><b>C:</b> 2/3</li>
+					<li><b>Assembly:</b> 2/3</li>
+					<li><b>Bash:</b> 2/3</li>
+					<li><b>C++:</b> 2/3</li>
+					<li><b>Python:</b> 3/3 (not hard using a baby lang)</li>
+				</ul>
+			</div>
+			<div class="box">
+				<h3 class="subtitle">Webdev Languages Expirience</h3>
+				<ul>
+					<li><b>HTML:</b> 3/3</li>
+					<li><b>CSS:</b> 2/3</li>
+					<li><b>JS:</b> 1/3</li>
+				</ul>
+			</div>
 		</div>
 	</body>
 </html>
